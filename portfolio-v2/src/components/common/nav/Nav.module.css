@@ -1,18 +1,38 @@
+@font-face {
+  font-family: "Ubuntu Light";
+  src: url("/fonts/Ubuntu/Ubuntu-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .sectionNav {
-    max-width: 1280px;
-    padding: 0px 20px;
-    margin: auto;
+  max-width: 1280px;
+  padding: 0px 20px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .nav {
-    position: fixed;
-    z-index: 10;
-    width: 100%;
-    top: 0px;
-    left: 0px;
-    padding: 15px 0px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  padding: 15px 0px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 .logoText {
-
-    width: 200px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.firstText {
+  font-size: 24px;
+  font-family: "Ubuntu Light", sans-serif;
+}
+.secondText {
+  font-size: 12px;
 }

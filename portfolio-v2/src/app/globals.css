@@ -1,3 +1,45 @@
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('/fonts/Ubuntu/Ubuntu-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* @font-face {
+  font-family: 'Ubuntu';
+  src: url('/fonts/Ubuntu/Ubuntu-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('/fonts/Ubuntu/Ubuntu-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+} 
+
+@font-face {
+  font-family: 'UbuntuSansMono';
+  src: url('/fonts/Ubuntu_Sans_Mono/static/UbuntuSansMono-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UbuntuSansMono';
+  src: url('/fonts/Ubuntu_Sans_Mono/static/UbuntuSansMono-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UbuntuSansMono';
+  src: url('/fonts/Ubuntu_Sans_Mono/static/UbuntuSansMono-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+} */
+
 :root {
   --background: #131017;
   --background-light: #1c1824;
@@ -27,7 +69,7 @@
 }
 
 html {
-  font-family: "Jost", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   color-scheme: dark;
   background-color: var(--background);
   color: var(--foreground);

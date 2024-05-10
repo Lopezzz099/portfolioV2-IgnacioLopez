@@ -1,14 +1,16 @@
 import React from 'react'
 import styles from './nav.module.css'
+import DrawerSection from '../DrawerSection/DrawerSection'
 
 const Nav = () => {
   return (
     <nav className={styles.nav}>
         <div className={styles.sectionNav}>
             <div className={styles.logoText}>
-                <p>Ignacio Lopez</p>
-                <p>Front-End</p>
+                <p className={styles.firstText}>Ignacio Lopez</p>
+                <p className={styles.secondText}>Front-End</p>
             </div>
+            <DrawerSection/>
         </div>
     </nav>
   )
