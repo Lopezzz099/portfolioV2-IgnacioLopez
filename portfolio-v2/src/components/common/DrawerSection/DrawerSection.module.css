@@ -1,0 +1,27 @@
+.boxDrawer{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background);
+    height: 100%;
+    align-items: center;
+}
+.boxDrawerMenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.boxDrawerMenu > p{
+    padding: 8px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.list{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 0px;
+}

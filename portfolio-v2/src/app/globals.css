@@ -41,20 +41,20 @@
 } */
 
 :root {
-  --background: #131017;
-  --background-light: #1c1824;
+  --background: #171721;
+  /* --background-light: #1c1824; */
   --foreground: #ffffff;
-  --primary: #e61720;
+  /* --primary: #e61720;
   --primary-dark: #9e0b0f;
   --secondary:#0b9e2d;
 
   --black-button: #2b282e;
 
-  --black-button-light: rgba(28, 24, 36, .40);
+  --black-button-light: rgba(28, 24, 36, .40); */
 
-  --line-color: rgba(255, 255, 255, .15);
+  --line-color: rgba(255, 255, 255, .45);
 
-  --text-copy: rgba(255, 255, 255, .3);
+  /* --text-copy: rgba(255, 255, 255, .3);
 
   --text-light: rgba(255, 255, 255, .75);
   
@@ -65,7 +65,11 @@
 
   --max-width: 1200px;
 
-  --transition-duration: 200ms;
+  --transition-duration: 200ms; */
+}
+
+body{
+  font-family: "Ubuntu Light", sans-serif;
 }
 
 html {
@@ -106,6 +110,20 @@ h2 {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+span{
+  color: var(--foreground);
+  font-family: "Ubuntu Light", sans-serif !important;
+}
+
+path{
+  color: var(--foreground);
+}
+
+p{
+  color: var(--foreground);
+  font-family: "Ubuntu Light", sans-serif;
 }
 
 hr {
