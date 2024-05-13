@@ -1,3 +1,5 @@
 type IconProps = {
-    onClick: () => void;
+    onClick?: () => void;
+    option?: boolean;
+    size?: number;
 };

@@ -2,15 +2,9 @@
 
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
-import Button from "@mui/material/Button";
 import List from "@mui/material/List";
 import Divider from "@mui/material/Divider";
-import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import ListItemText from "@mui/material/ListItemText";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import styles from "./DrawerSection.module.css";
@@ -24,6 +18,7 @@ import Proyectos from "@/components/icons/proyectos/Proyectos";
 import Contactame from "@/components/icons/contactame/Contactame";
 import Oscuro from "@/components/icons/oscuro/Oscuro";
 import Claro from "@/components/icons/claro/Claro";
+import Lenguaje from "@/components/icons/lenguaje/lenguaje";
 
 const navItems = [
   "Inicio",
@@ -36,22 +31,23 @@ const navItems = [
 const DrawerSection = () => {
   const [open, setOpen] = React.useState(false);
   const [theme, setTheme] = React.useState(false);
+  const [language, setLanguage] = React.useState(false);
 
   const toggleDrawer = (newOpen: boolean) => () => {
     setOpen(newOpen);
   };
-  console.log(open)
+  console.log(open);
 
   const toggleTheme = () => () => {
     setTheme(!theme);
   };
 
+  const toggleLanguage = () => () => {
+    setLanguage(!language);
+  };
+
   const DrawerList = (
-    <Box
-      sx={{ width: 280 }}
-      role="presentation"
-      className={styles.boxDrawer}
-    >
+    <Box sx={{ width: 280 }} role="presentation" className={styles.boxDrawer}>
       <Box className={styles.boxDrawerMenu}>
         <p>Menu</p>
         <IconButton onClick={toggleDrawer(false)}>
@@ -60,17 +56,18 @@ const DrawerSection = () => {
       </Box>
       <Divider />
       <List className={styles.list}>
-        <Inicio onClick={toggleDrawer(false)}/>
-        <SobreMi onClick={toggleDrawer(false)}/>
-        <Habilidades onClick={toggleDrawer(false)}/>
-        <Proyectos onClick={toggleDrawer(false)}/>
-        <Contactame onClick={toggleDrawer(false)}/>
+        <Inicio onClick={toggleDrawer(false)} />
+        <SobreMi onClick={toggleDrawer(false)} />
+        <Habilidades onClick={toggleDrawer(false)} />
+        <Proyectos onClick={toggleDrawer(false)} />
+        <Contactame onClick={toggleDrawer(false)} />
       </List>
       <Divider />
-      <List>
-        <button onClick={toggleTheme()}>
+      <List className={styles.list2}>
+        <ListItemButton sx={{ padding: 0 }} onClick={toggleTheme()}>
           {theme ? <Oscuro /> : <Claro />}
-        </button>
+        </ListItemButton>
+        <Lenguaje onClick={toggleLanguage()} option={language}/>
       </List>
     </Box>
   );
