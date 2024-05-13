@@ -10,10 +10,16 @@ const SectionPrincipal = () => {
     <section className={stylesSection.sections} id="Inicio">
       <div className={styles.container}>
         <div style={{ width: "100%" }}>
-          <h1 className={styles.title}>Soy un desarrollador Front-end</h1>
+          <h1 className={styles.title}>
+            Soy un desarrollador <span className={styles.spanTitle}>Front-end</span>
+          </h1>
           <p className={styles.description}>
             ¡Bienvenido a mi portfolio! Te ayudo a buscar y crear soluciones a
-            tus necesidades tecnológicas.
+            tus necesidades tecnológicas. Aquí puedes ver los{" "}
+            <span className={styles.span}>
+              <a href="#Trabajos">últimos trabajos</a>
+            </span>{" "}
+            de los que me he hecho cargo.
           </p>
         </div>
         <div className={styles.icons}>
@@ -24,6 +30,18 @@ const SectionPrincipal = () => {
             <Linkedin size={45} />
           </Link>
         </div>
+      </div>
+      <div className={styles.container2}>
+        <a href={"#Contacto"} className={styles.a1}>Contáctame</a>
+        <a
+          href={
+            "https://drive.google.com/file/d/1TfdnlAyFveV5jCCECCIteTVH3gaKZ0tW/view"
+          }
+          target={"_blank"}
+          className={styles.a2}
+        >
+          Currículum Vitae
+        </a>
       </div>
     </section>
   );

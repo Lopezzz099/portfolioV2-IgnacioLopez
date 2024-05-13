@@ -3,7 +3,7 @@ import React from "react";
 
 const Linkedin = ({ size }: IconProps) => {
   return (
-    <Image src="/linkedinBlanco.png" alt="linkedin" width={size} height={size} style={{margin: "27px"}}/>
+    <Image src="/linkedinBlanco.png" alt="linkedin" width={size} height={size}/>
   );
 };
 

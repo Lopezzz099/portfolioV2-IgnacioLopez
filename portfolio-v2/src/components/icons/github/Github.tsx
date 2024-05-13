@@ -3,7 +3,7 @@ import React from "react";
 
 const Github = ({ size }: IconProps) => {
   return (
-    <Image src="/githubBlanco.png" alt="github" width={size} height={size} style={{margin: "27px"}}/>
+    <Image src="/githubBlanco.png" alt="github" width={size} height={size}/>
   );
 };
 

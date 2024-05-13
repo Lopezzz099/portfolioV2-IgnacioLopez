@@ -71,6 +71,8 @@
 
 body{
   font-family: "Ubuntu Light", sans-serif;
+  padding-right: 0px !important;
+  overflow: inherit!important;
 }
 
 html {
@@ -135,3 +137,15 @@ hr {
   margin: 0.5rem 0;
 }
 
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background: rgb(160, 160, 160);
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
