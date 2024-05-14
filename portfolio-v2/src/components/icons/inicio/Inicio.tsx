@@ -21,7 +21,7 @@ const Inicio = ({ onClick }: IconProps) => {
         onClick={() => {
           const section = document.getElementById("Inicio");
           if (section) {
-            const offset = section.offsetTop - 180;
+            const offset = section.offsetTop - 250;
             window.scrollTo({ top: offset, behavior: "smooth" });
           }
         }}

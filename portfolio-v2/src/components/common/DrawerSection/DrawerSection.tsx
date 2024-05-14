@@ -36,7 +36,6 @@ const DrawerSection = () => {
   const toggleDrawer = (newOpen: boolean) => () => {
     setOpen(newOpen);
   };
-  console.log(open);
 
   const toggleTheme = () => () => {
     setTheme(!theme);
