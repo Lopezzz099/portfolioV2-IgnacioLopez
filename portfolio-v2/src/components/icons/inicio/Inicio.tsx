@@ -6,7 +6,7 @@ import {
   ListItemIcon,
   ListItemText,
 } from "@mui/material";
-import styles from "./Inicio.module.css";
+import styles from "../Icons.module.css"
 
 const Inicio = ({ onClick }: IconProps) => {
   return (

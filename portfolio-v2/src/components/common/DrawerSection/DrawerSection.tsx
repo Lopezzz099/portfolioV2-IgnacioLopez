@@ -18,7 +18,8 @@ import Proyectos from "@/components/icons/proyectos/Proyectos";
 import Contactame from "@/components/icons/contactame/Contactame";
 import Oscuro from "@/components/icons/oscuro/Oscuro";
 import Claro from "@/components/icons/claro/Claro";
-import Lenguaje from "@/components/icons/lenguaje/lenguaje";
+import Lenguaje from "@/components/icons/lenguaje/Lenguaje";
+
 
 const navItems = [
   "Inicio",

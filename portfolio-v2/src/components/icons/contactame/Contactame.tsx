@@ -1,7 +1,7 @@
 import React from "react";
 import ForwardToInbox from "@mui/icons-material/ForwardToInboxRounded";
 import { ListItem, ListItemButton, ListItemIcon, ListItemText } from "@mui/material";
-import styles from "./Contactame.module.css";
+import styles from "../Icons.module.css"
 
 const Contactame = ({onClick}: IconProps) => {
   return (

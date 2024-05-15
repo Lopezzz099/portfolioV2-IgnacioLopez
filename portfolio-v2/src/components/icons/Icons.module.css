@@ -1,0 +1,36 @@
+.listItem {
+  width: 250px;
+  padding: 0px;
+}
+.icon {
+  width: 30px;
+  height: 30px;
+  margin: 8px;
+}
+.listItemText > span {
+  font-size: 20px;
+}
+.iconSkill {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  gap: 5px;
+  width: 60px;
+  transition: all 200ms ease 0s;
+}
+.iconSkill:hover {
+  transform: scale(1.1);
+}
+.iconSkillImage {
+  filter: invert(0.9);
+  width: 100%;
+}
+.text {
+  font-size: 20px;
+}
+@media (min-width: 640px) {
+  .iconSkill {
+    width: 80px;
+  }
+}

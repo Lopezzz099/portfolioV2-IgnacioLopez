@@ -1,7 +1,7 @@
 import React from "react";
 import EmojiObjects from "@mui/icons-material/EmojiObjectsRounded";
 import { ListItem, ListItemButton, ListItemIcon, ListItemText } from "@mui/material";
-import styles from "./Oscuro.module.css";
+import styles from "../Icons.module.css"
 
 const Oscuro = () => {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 import LanguageIcon from "@mui/icons-material/LanguageRounded";
 import { ListItem, ListItemButton, ListItemIcon, ListItemText } from "@mui/material";
-import styles from "./lenguaje.module.css";
+import styles from "../Icons.module.css"
 
 const Lenguaje = ({onClick, option}: IconProps) => {
   return (

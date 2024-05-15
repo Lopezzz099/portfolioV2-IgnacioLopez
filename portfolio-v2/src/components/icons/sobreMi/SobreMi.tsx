@@ -6,7 +6,7 @@ import {
   ListItemIcon,
   ListItemText,
 } from "@mui/material";
-import styles from "./SobreMi.module.css";
+import styles from "../Icons.module.css"
 
 const SobreMi = ({ onClick }: IconProps) => {
   return (

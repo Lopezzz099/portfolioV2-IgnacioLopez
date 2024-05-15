@@ -1,7 +1,7 @@
 import React from "react";
 import WorkOutlineIcon from "@mui/icons-material/WorkOutlineRounded";
 import { ListItem, ListItemButton, ListItemIcon, ListItemText } from "@mui/material";
-import styles from "./Proyectos.module.css";
+import styles from "../Icons.module.css"
 
 const Proyectos = ({onClick}: IconProps) => {
   return (
