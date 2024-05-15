@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import styles from "./SectionPrincipal.module.css";
 import stylesSection from "../Sections.module.css";
@@ -11,13 +13,24 @@ const SectionPrincipal = () => {
       <div className={styles.container}>
         <div style={{ width: "100%" }}>
           <h1 className={styles.title}>
-            Soy un desarrollador <span className={styles.spanTitle}>Front-end</span>
+            Soy un desarrollador{" "}
+            <span className={styles.spanTitle}>Front-end</span>
           </h1>
           <p className={styles.description}>
             ¡Bienvenido a mi portfolio! Te ayudo a buscar y crear soluciones a
             tus necesidades tecnológicas. Aquí puedes ver los{" "}
             <span className={styles.span}>
-              <a href="#Trabajos">últimos trabajos</a>
+              <button
+                onClick={() => {
+                  const section = document.getElementById("Proyectos");
+                  if (section) {
+                    const offset = section.offsetTop - 180;
+                    window.scrollTo({ top: offset, behavior: "smooth" });
+                  }
+                }}
+              >
+                últimos trabajos
+              </button>
             </span>{" "}
             de los que me he hecho cargo.
           </p>
@@ -32,7 +45,9 @@ const SectionPrincipal = () => {
         </div>
       </div>
       <div className={styles.container2}>
-        <a href={"#Contacto"} className={styles.a1}>Contáctame</a>
+        <a href={"#Contacto"} className={styles.a1}>
+          Contáctame
+        </a>
         <a
           href={
             "https://drive.google.com/file/d/1TfdnlAyFveV5jCCECCIteTVH3gaKZ0tW/view"

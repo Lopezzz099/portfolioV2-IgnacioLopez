@@ -1,0 +1,26 @@
+.articleLeft {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  gap: 60px;
+}
+.articleRight{
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 60px;
+}
+@media (min-width: 820px) {
+    .articleLeft{
+        gap: 25px;
+        flex-direction: row;
+        text-align: left;
+    }
+    .articleRight{
+        gap: 25px;
+        flex-direction: row-reverse;
+        text-align: right;
+    }
+}

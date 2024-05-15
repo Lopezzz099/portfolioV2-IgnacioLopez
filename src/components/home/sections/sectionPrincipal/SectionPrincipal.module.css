@@ -1,12 +1,11 @@
 .title {
-  font-size: 74px;
+  font-size: 32px;
   font-weight: 400;
 }
 .description {
   color: var(--text-color-grey);
-  font-size: 24px;
+  font-size: 20px;
   margin-top: 20px;
-  max-width: 70%;
 }
 .container {
   display: flex;
@@ -18,30 +17,45 @@
 .icons {
   display: flex;
   gap: 50px;
-  flex-direction: column;
+  flex-direction: row;
 }
-.spanTitle, .span{
+.spanTitle {
   color: var(--primary);
   transition: all 200ms ease 0s;
 }
-.span:hover{
+.span > button {
+  font-size: 24px;
+  color: var(--primary);
+  transition: all 200ms ease 0s;
+}
+.span:hover > button {
   color: var(--foreground);
   background-color: var(--primary);
 }
 .container2 {
   display: flex;
-  align-items: center;
-  flex-direction: row;
-  gap: 20px;
+  -webkit-box-pack: center;
   justify-content: center;
-  margin-top: 50px;
+  flex-direction: column;
+  gap: 10px;
+  margin: 25px 25px 0px;
 }
 .a1 {
   background-color: var(--primary);
   color: var(--foreground);
-  padding: 16px;
   font-size: 24px;
   text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 2px;
+  padding: 8px;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  gap: 10px;
+  transition: all 200ms ease 0s;
+  filter: brightness(90%);
 }
 .a1:hover {
   background-color: var(--secondary);
@@ -50,16 +64,49 @@
   background-color: transparent;
   border: 1px solid var(--primary);
   color: var(--foreground);
-  padding: 16px;
-  font-size: 24px;
   text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 2px;
+  font-size: 24px;
+  padding: 8px;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  gap: 10px;
   transition: all 200ms ease 0s;
+  text-decoration: none;
 }
 .a2:hover {
   background-color: var(--primary);
 }
 @media (min-width: 640px) {
+  .description {
+    font-size: 24px;
+  }
+  .title {
+    font-size: 74px;
+  }
   .container {
     flex-direction: row;
+  }
+  .icons {
+    flex-direction: column;
+  }
+  .container2 {
+    flex-direction: row;
+    margin: 51px 0px 0px;
+  }
+  .a1 {
+    padding: 16px;
+  }
+  .a2 {
+    padding: 16px;
+  }
+}
+@media (min-width: 1280px) {
+  .description {
+    max-width: 70%;
   }
 }
