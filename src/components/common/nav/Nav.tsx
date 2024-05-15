@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './nav.module.css'
+import styles from './Nav.module.css'
 import DrawerSection from '../DrawerSection/DrawerSection'
 
 const Nav = () => {

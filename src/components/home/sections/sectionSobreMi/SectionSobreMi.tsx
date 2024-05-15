@@ -1,6 +1,6 @@
 import React from "react";
-import stylesSection from "../sections.module.css";
-import styles from "./sectionSobreMi.module.css";
+import stylesSection from "../Sections.module.css";
+import styles from "./SectionSobreMi.module.css";
 import Image from "next/image";
 
 const SectionSobreMi = () => {
