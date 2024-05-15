@@ -17,9 +17,6 @@ export default function Home() {
         <SectionSobreMi/>
         <SectionHabilidades/>
         <SectionProyectos/>
-        <div style={{width: "100%", height: "200vh"}}>
-
-        </div>
       </main>
     </>
   );
