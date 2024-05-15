@@ -50,7 +50,7 @@ const SectionPrincipal = () => {
         </a>
         <a
           href={
-            "https://drive.google.com/file/d/1TfdnlAyFveV5jCCECCIteTVH3gaKZ0tW/view"
+            "https://drive.google.com/file/d/1TfdnlAyFveV5jCCECCIteTVH3gaKZ0tW/view?usp=sharing"
           }
           target={"_blank"}
           className={styles.a2}
