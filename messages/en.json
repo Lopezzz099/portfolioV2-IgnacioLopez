@@ -1,0 +1,55 @@
+{
+  "SectionPrincipal": {
+    "title": "I am a ",
+    "titleSpan": "Front-end",
+    "title2": " developer",
+    "description": "Welcome to my portfolio! I help you find and create solutions to your technological needs. Here you can see the ",
+    "descriptionSpan": "latest projects",
+    "description2": " i have taken charge of.",
+    "contact": "Contact me",
+    "resume": "Resume"
+  },
+  "SectionSobreMi": {
+    "title": "About me",
+    "description": "If you've stopped here, first and foremost, thank you for your interest. Let me introduce myself again. I'm Ignacio López, working as a Front-End developer. Based in my city, Bahía Blanca - Buenos Aires - Argentina, I completed my studies as a Certified Tech Developer specializing in Front-End.",
+    "description2": "Throughout this journey, I've gained knowledge in various fields, from crafting my first web pages with HTML and CSS to building pages with Next.js and applications with React Native. I'm not sure what's next, but we'll be ready.",
+    "description3": "As a freelancer and student, I've engaged in projects ranging from simple static pages to large, complex endeavors like an E-commerce platform or a Dungeons & Dragons control page. I cherish the memories of all the projects I've been involved in, both individually and as part of a team.",
+    "description4": "Currently, I'm open to new projects—whether it's to guide fresh ideas to success or join established ventures in pursuit of new horizons, I'm at your service."
+  },
+  "SectionHabilidades": {
+    "title": "Skills"
+  },
+  "SectionProyectos": {
+    "title": "Projects",
+    "proyects": {
+      "proyectDD": {
+        "title": "D&D Project",
+        "description": "Integrative project from the second track of the Certified Tech Developer program at Digital House. The project involved creating a web page for managing Dungeons & Dragons campaigns.",
+        "description2": "My role in this project was as a Front-End developer. Additionally, there was significant teamwork using various agile methodologies like Scrum and Kanban.",
+        "description3": "The project was developed using Next.js and TypeScript."
+      },
+      "proyectAudiophile": {
+        "title": "Audiophile Project",
+        "description": "Project undertaken with a group of Front-End developers. The project involved creating a web page for headphone and audio sales.",
+        "description2": "My role in this project was as a Front-End developer. We worked with a teacher who introduced us to new technologies and guided us through the project.",
+        "description3": "The project was developed using React.js, Redux, Formik, Yup, Axios, and Material UI."
+      },
+      "proyectAlquilerAutos": {
+        "title": "Car Rental Project",
+        "description": "Integrative project from the first track of the Certified Tech Developer program at Digital House. The objective of the project was to develop a web page for car rental.",
+        "description2": "My role in this project was as a Front-End developer. I also want to highlight the excellent teamwork we demonstrated, which was crucial to the project's success.",
+        "description3": "The project was developed using React.js and JavaScript."
+      }
+    }
+  },
+  "SectionContactame": {
+    "title": "Contact me",
+    "email": "Your email",
+    "name": "Your name",
+    "message": "Message",
+    "send": "Send message",
+    "loading": "Sending...",
+    "success": "Email sent successfully!",
+    "error": "Error sending email. Please try again."
+  }
+}

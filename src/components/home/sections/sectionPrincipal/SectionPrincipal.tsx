@@ -6,19 +6,22 @@ import stylesSection from "../Sections.module.css";
 import Github from "@/components/icons/github/Github";
 import Linkedin from "@/components/icons/linkedin/Linkedin";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 const SectionPrincipal = () => {
+  const t = useTranslations("SectionPrincipal");
+
   return (
     <section className={stylesSection.sections} id="Inicio">
       <div className={styles.container}>
         <div style={{ width: "100%" }}>
           <h1 className={styles.title}>
-            Soy un desarrollador{" "}
-            <span className={styles.spanTitle}>Front-end</span>
+            {t("title")}{" "}
+            <span className={styles.spanTitle}>{t("titleSpan")}</span>{" "}
+            {t("title2")}
           </h1>
           <p className={styles.description}>
-            ¡Bienvenido a mi portfolio! Te ayudo a buscar y crear soluciones a
-            tus necesidades tecnológicas. Aquí puedes ver los{" "}
+            {t("description")}{" "}
             <span className={styles.span}>
               <button
                 onClick={() => {
@@ -29,10 +32,10 @@ const SectionPrincipal = () => {
                   }
                 }}
               >
-                últimos trabajos
+                {t("descriptionSpan")}
               </button>
             </span>{" "}
-            de los que me he hecho cargo.
+            {t("description2")}
           </p>
         </div>
         <div className={styles.icons}>
@@ -55,7 +58,7 @@ const SectionPrincipal = () => {
             }
           }}
         >
-          Contáctame
+          {t("contact")}
         </button>
         <a
           href={
@@ -64,7 +67,7 @@ const SectionPrincipal = () => {
           target={"_blank"}
           className={styles.a2}
         >
-          Currículum Vitae
+          {t("resume")}
         </a>
       </div>
     </section>

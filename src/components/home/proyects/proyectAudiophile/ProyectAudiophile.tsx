@@ -3,8 +3,10 @@ import styles from "./ProyectAudiophile.module.css";
 import stylesProyects from "../Proyects.module.css";
 import Github from "@/components/icons/github/Github";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const ProyectAudiophile = () => {
+  const t = useTranslations("SectionProyectos.proyects.proyectAudiophile");
   return (
     <article className={stylesProyects.articleRight}>
       <a
@@ -23,20 +25,15 @@ const ProyectAudiophile = () => {
         </div>
       </a>
       <div className={styles.container}>
-        <h3 className={styles.title}>Proyecto Audiophile</h3>
+        <h3 className={styles.title}>{t("title")}</h3>
         <p className={styles.description}>
-          Proyecto hecho con un grupo de desarrolladores Front. El proyecto
-          consistio en realizar una pagina web de ventas de auriculares y
-          sonido.
+          {t("description")}
           <br />
           <br />
-          Mi rol en este proyecto fue de desarrollador Front-End. En este
-          proyecto se hizo con un profesor que nos enseñaba nuevas tecnologias
-          ademas de guiarnos en la realizacion del proyecto.
+          {t("description2")}
           <br />
           <br />
-          El proyecto fue realizado con React.js, Redux, Formik, Yup, Axios y
-          Material UI.
+          {t("description3")}
         </p>
         <a
           href="https://github.com/proyecto-dnd"

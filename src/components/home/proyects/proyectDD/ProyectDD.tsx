@@ -3,8 +3,10 @@ import styles from "./ProyectDD.module.css";
 import stylesProyects from "../Proyects.module.css";
 import Github from "@/components/icons/github/Github";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const ProyectDD = () => {
+  const t = useTranslations("SectionProyectos.proyects.proyectDD");
   return (
     <article className={stylesProyects.articleLeft}>
       <a href="https://proyecto-dnd.vercel.app/landing" className={styles.linkProyect}>
@@ -14,19 +16,15 @@ const ProyectDD = () => {
         </div>
       </a>
       <div className={styles.container}>
-        <h3 className={styles.title}>Proyecto D&D</h3>
+        <h3 className={styles.title}>{t("title")}</h3>
         <p className={styles.description}>
-          Proyecto integrador del segundo track de la carrera de Certified Tech
-          Developer de Digital House. El proyecto consistio en realizar una
-          pagina web de gestion de campañas de Dungeons & Dragons.
+          {t("description")}
           <br />
           <br />
-          Mi rol en este proyecto fue de desarrollador Front-End. Ademas, hubo
-          un gran trabajo en equipo utilizando distintas metodologias agiles,
-          como Scrum y Kanban.
+          {t("description2")}
           <br />
           <br />
-          El proyecto fue realizado con Next.js y Typescript.
+          {t("description3")}
         </p>
         <a
           href="https://github.com/proyecto-dnd"

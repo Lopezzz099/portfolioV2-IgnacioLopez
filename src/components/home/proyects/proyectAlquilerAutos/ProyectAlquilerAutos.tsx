@@ -3,8 +3,10 @@ import styles from "./ProyectAlquilerAutos.module.css";
 import stylesProyects from "../Proyects.module.css";
 import Github from "@/components/icons/github/Github";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const ProyectAlquilerAutos = () => {
+  const t = useTranslations("SectionProyectos.proyects.proyectAlquilerAutos");
   return (
     <article className={stylesProyects.articleLeft}>
       <a
@@ -23,19 +25,15 @@ const ProyectAlquilerAutos = () => {
         </div>
       </a>
       <div className={styles.container}>
-        <h3 className={styles.title}>Proyecto Alquiler de Autos</h3>
+        <h3 className={styles.title}>{t("title")}</h3>
         <p className={styles.description}>
-          Proyecto integrador del primer track de la carrera de Certified Tech
-          Developer de Digital House. El objetivo del proyecto fue desarrollar
-          una página web para el alquiler de autos.
+          {t("description")}
           <br />
           <br />
-          Mi rol en este proyecto fue como desarrollador Front-End. Ademas,
-          quiero destacar el excelente trabajo en equipo que realizamos, lo cual
-          fue fundamental para el éxito del proyecto.
+          {t("description2")}
           <br />
           <br />
-          El proyecto fue realizado con React.js y JavaScript.
+          {t("description3")}
         </p>
         <a
           href="https://github.com/proyecto-dnd"

@@ -15,13 +15,15 @@ import NpmIcon from "@/components/icons/npm/NpmIcon";
 import PostmanIcon from "@/components/icons/postman/PostmanIcon";
 import FigmaIcon from "@/components/icons/figma/FigmaIcon";
 import NodejsIcon from "@/components/icons/nodejs/Nodejs";
+import { useTranslations } from "next-intl";
 
 const SectionHabilidades = () => {
+  const t = useTranslations("SectionHabilidades");
   return (
     <section className={stylesSection.sections} id="Habilidades">
       <div className={styles.container}>
         <h2 className={styles.title}>
-          Habilidades<span className={styles.spanTitleLine}></span>
+          {t("title")}<span className={styles.spanTitleLine}></span>
         </h2>
         <div className={styles.skills}>
           <HtmlIcon/>

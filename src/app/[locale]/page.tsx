@@ -5,6 +5,7 @@ import SectionSobreMi from "@/components/home/sections/sectionSobreMi/SectionSob
 import SectionHabilidades from "@/components/home/sections/sectionHabilidades/SectionHabilidades";
 import SectionProyectos from "@/components/home/sections/sectionProyectos/SectionProyectos";
 import SectionContactame from "@/components/home/sections/sectionContactame/SectionContactame";
+import { useTranslations } from "next-intl";
 
 export default function Home() {
   return (

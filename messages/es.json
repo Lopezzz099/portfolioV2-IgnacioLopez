@@ -1,0 +1,55 @@
+{
+  "SectionPrincipal": {
+    "title": "Soy un desarrollador ",
+    "titleSpan": "Front-end",
+    "title2": "",
+    "description": "¡Bienvenido a mi portfolio! Te ayudo a buscar y crear soluciones a tus necesidades tecnológicas. Aquí puedes ver los ",
+    "descriptionSpan": "últimos trabajos",
+    "description2": " de los que me he hecho cargo.",
+    "contact": "Contáctame",
+    "resume": "Currículum Vitae"
+  },
+  "SectionSobreMi": {
+    "title": "Sobre mi",
+    "description": "Si te has detenido aquí, ante todo, gracias por tu interés. Permíteme presentarme de nuevo. Soy Ignacio López y trabajo como desarrollador Front-End. Desde mi ciudad, Bahía Blanca - Buenos Aires - Argentina, he terminado mi carrera en Certified Tech Developer con orientación en Front-End.",
+    "description2": "A lo largo de esta formación, he adquirido conocimientos en diversos campos, desde mis primeras páginas web con HTML y CSS hasta la creación de páginas con Next.js y aplicaciones con React Native. No sé qué será lo siguiente, pero estaremos preparados.",
+    "description3": "Como freelancer y estudiante, he participado en proyectos simples como páginas estáticas hasta grandes y complejos como un E-commerce o una página de control de Dungeons & Dragons. Disfruto recordar todos los proyectos en los que he participado, tanto individualmente como en equipo.",
+    "description4": "Actualmente, estoy abierto a nuevos proyectos. Ya sea para acompañar nuevas ideas hacia el éxito o para unirme a aventuras consolidadas en busca de nuevos horizontes, estoy a tu disposición."
+  },
+  "SectionHabilidades": {
+    "title": "Habilidades"
+  },
+  "SectionProyectos": {
+    "title": "Proyectos",
+    "proyects": {
+      "proyectDD": {
+        "title": "Proyecto D&D",
+        "description": "Proyecto integrador del segundo track de la carrera de Certified Tech Developer de Digital House. El proyecto consistio en realizar una pagina web de gestion de campañas de Dungeons & Dragons.",
+        "description2": "Mi rol en este proyecto fue de desarrollador Front-End. Ademas, hubo un gran trabajo en equipo utilizando distintas metodologias agiles, como Scrum y Kanban.",
+        "description3": "El proyecto fue realizado con Next.js y Typescript."
+      },
+      "proyectAudiophile": {
+        "title": "Proyecto Audiophile",
+        "description": "Proyecto hecho con un grupo de desarrolladores Front. El proyecto consistio en realizar una pagina web de ventas de auriculares y sonido.",
+        "description2": "Mi rol en este proyecto fue de desarrollador Front-End. En este proyecto se hizo con un profesor que nos enseñaba nuevas tecnologias ademas de guiarnos en la realizacion del proyecto.",
+        "description3": "El proyecto fue realizado con React.js, Redux, Formik, Yup, Axios y Material UI."
+      },
+      "proyectAlquilerAutos": {
+        "title": "Proyecto Alquiler de Autos",
+        "description": "Proyecto integrador del primer track de la carrera de Certified Tech Developer de Digital House. El objetivo del proyecto fue desarrollar una página web para el alquiler de autos.",
+        "description2": "Mi rol en este proyecto fue como desarrollador Front-End. Ademas, quiero destacar el excelente trabajo en equipo que realizamos, lo cual fue fundamental para el éxito del proyecto.",
+        "description3": "El proyecto fue realizado con React.js y JavaScript."
+      }
+    }
+  },
+  "SectionContactame": {
+    "title": "Contactame",
+    "email": "Tu email",
+    "name": "Tu nombre",
+    "message": "Mensaje",
+    "send": "Enviar mensaje",
+    "loading": "Enviando...",
+    "success": "¡Correo enviado exitosamente!",
+    "error": "Error al enviar el correo. Por favor, intenta nuevamente."
+  }
+}

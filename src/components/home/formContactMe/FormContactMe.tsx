@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import styles from "./FormContactMe.module.css";
+import { useTranslations } from "next-intl";
 
 const FormContactMe = () => {
   const [name, setName] = useState("");
@@ -9,6 +10,8 @@ const FormContactMe = () => {
   const [message, setMessage] = useState("");
   const [status, setStatus] = useState<boolean>();
   const [isLoading, setIsLoading] = useState(false);
+
+  const t = useTranslations("SectionContactame");
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -50,21 +53,10 @@ const FormContactMe = () => {
     }
   };
 
-  //   const getMessageByStatus = () => {
-  //     switch (status) {
-  //       case "success":
-  //         return "¡Correo enviado exitosamente!";
-  //       case "error":
-  //         return "Error al enviar el correo. Por favor, intenta nuevamente.";
-  //       default:
-  //         return "";
-  //     }
-  //   };
-
   return (
     <form className={styles.form} onSubmit={handleSubmit}>
       <div className={styles.containerInputs}>
-        <label htmlFor="email">Tu email</label>
+        <label htmlFor="email">{t("email")}</label>
         <span className={styles.spanInput}>
           <input
             type="email"
@@ -78,7 +70,7 @@ const FormContactMe = () => {
         </span>
       </div>
       <div className={styles.containerInputs}>
-        <label htmlFor="name">Tu nombre</label>
+        <label htmlFor="name">{t("name")}</label>
         <span className={styles.spanInput}>
           <input
             type="text"
@@ -92,7 +84,7 @@ const FormContactMe = () => {
         </span>
       </div>
       <div className={styles.containerInputs}>
-        <label htmlFor="message">Mensaje</label>
+        <label htmlFor="message">{t("message")}</label>
         <span className={styles.spanInput}>
           <textarea
             id="message"
@@ -105,18 +97,18 @@ const FormContactMe = () => {
         </span>
       </div>
       <button type="submit" className={styles.button}>
-        {isLoading ? "Enviando..." : "Enviar mensaje"}
+        {isLoading ? t("sending") : t("send")}
       </button>
       <input type="hidden" name="_next" value="http://localhost:3000" />
       <input type="hidden" name="_captcha" value="false" />
       <input type="hidden" name="_template" value="table" />
       {status === true ? (
         <div className={styles.statusMessageSuccess}>
-          ¡Correo enviado exitosamente!
+          {t("success")}
         </div>
       ) : status === false ? (
         <div className={styles.statusMessageError}>
-          Error al enviar el correo. Por favor, intenta nuevamente.
+          {t("error")}
         </div>
       ) : (
         <></>
