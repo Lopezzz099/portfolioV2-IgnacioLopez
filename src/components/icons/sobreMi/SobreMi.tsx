@@ -7,8 +7,10 @@ import {
   ListItemText,
 } from "@mui/material";
 import styles from "../Icons.module.css"
+import { useTranslations } from "next-intl";
 
 const SobreMi = ({ onClick }: IconProps) => {
+  const t = useTranslations("nav");
   return (
     <ListItem
       key={"Sobre mi"}
@@ -29,7 +31,7 @@ const SobreMi = ({ onClick }: IconProps) => {
         <ListItemIcon>
           <PortraitIcon className={styles.icon} />
         </ListItemIcon>
-        <ListItemText primary={"Sobre mi"} className={styles.listItemText} />
+        <ListItemText primary={t("aboutMe")} className={styles.listItemText} />
       </ListItemButton>
     </ListItem>
   );

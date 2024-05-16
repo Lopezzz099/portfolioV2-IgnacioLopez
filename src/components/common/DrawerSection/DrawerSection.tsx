@@ -19,31 +19,33 @@ import Contactame from "@/components/icons/contactame/Contactame";
 import Oscuro from "@/components/icons/oscuro/Oscuro";
 import Claro from "@/components/icons/claro/Claro";
 import Lenguaje from "@/components/icons/lenguaje/Lenguaje";
-
-
-const navItems = [
-  "Inicio",
-  "Sobre mi",
-  "Habilidades",
-  "Proyectos",
-  "Contactame",
-];
+import { useRouter } from "@/navigation";
+import { usePathname } from "next/navigation";
 
 const DrawerSection = () => {
   const [open, setOpen] = React.useState(false);
   const [theme, setTheme] = React.useState(false);
-  const [language, setLanguage] = React.useState(false);
+  const pathname = usePathname();
+  const idiomaSinBarra = pathname.substring(1);
+  const [language, setLanguage] = React.useState(idiomaSinBarra);
 
   const toggleDrawer = (newOpen: boolean) => () => {
     setOpen(newOpen);
   };
+  const router = useRouter()
 
   const toggleTheme = () => () => {
     setTheme(!theme);
   };
 
-  const toggleLanguage = () => () => {
-    setLanguage(!language);
+  const toggleLanguage = (newLanguage: string) => () => {
+    setLanguage(newLanguage);
+    // Cambiar la ruta según el idioma seleccionado
+    if (newLanguage === "es") {
+      router.replace("/", {locale: 'es'});
+    } else if (newLanguage === "en") {
+      router.push("/", {locale: 'en'});
+    }
   };
 
   const DrawerList = (
@@ -67,7 +69,7 @@ const DrawerSection = () => {
         <ListItemButton sx={{ padding: 0 }} onClick={toggleTheme()}>
           {theme ? <Oscuro /> : <Claro />}
         </ListItemButton>
-        <Lenguaje onClick={toggleLanguage()} option={language}/>
+        <Lenguaje onClick={toggleLanguage(language === "en" ? "es" : "en")} option={language}/>
       </List>
     </Box>
   );

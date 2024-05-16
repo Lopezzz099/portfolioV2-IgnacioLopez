@@ -51,5 +51,14 @@
     "loading": "Enviando...",
     "success": "¡Correo enviado exitosamente!",
     "error": "Error al enviar el correo. Por favor, intenta nuevamente."
+  },
+  "nav": {
+    "home": "Inicio",
+    "aboutMe": "Sobre mi",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "contact": "Contactame",
+    "lightTheme": "Claro",
+    "darkTheme": "Oscuro"
   }
 }

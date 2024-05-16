@@ -51,5 +51,14 @@
     "loading": "Sending...",
     "success": "Email sent successfully!",
     "error": "Error sending email. Please try again."
+  },
+  "nav": {
+    "home": "Home",
+    "aboutMe": "About me",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact me",
+    "lightTheme": "Light",
+    "darkTheme": "Dark"
   }
 }

@@ -7,8 +7,10 @@ import {
   ListItemText,
 } from "@mui/material";
 import styles from "../Icons.module.css";
+import { useTranslations } from "next-intl";
 
 const Habilidades = ({ onClick }: IconProps) => {
+  const t = useTranslations("nav");
   return (
     <ListItem
       key={"Habilidades"}
@@ -29,7 +31,7 @@ const Habilidades = ({ onClick }: IconProps) => {
         <ListItemIcon>
           <RocketLaunchIcon className={styles.icon} />
         </ListItemIcon>
-        <ListItemText primary={"Habilidades"} className={styles.listItemText} />
+        <ListItemText primary={t("skills")} className={styles.listItemText} />
       </ListItemButton>
     </ListItem>
   );

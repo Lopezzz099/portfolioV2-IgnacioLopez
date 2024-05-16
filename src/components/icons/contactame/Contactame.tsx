@@ -7,8 +7,10 @@ import {
   ListItemText,
 } from "@mui/material";
 import styles from "../Icons.module.css";
+import { useTranslations } from "next-intl";
 
 const Contactame = ({ onClick }: IconProps) => {
+  const t = useTranslations("nav");
   return (
     <ListItem
       key={"Contactame"}
@@ -29,7 +31,7 @@ const Contactame = ({ onClick }: IconProps) => {
         <ListItemIcon>
           <ForwardToInbox className={styles.icon} />
         </ListItemIcon>
-        <ListItemText primary={"Contactame"} className={styles.listItemText} />
+        <ListItemText primary={t("contact")} className={styles.listItemText} />
       </ListItemButton>
     </ListItem>
   );

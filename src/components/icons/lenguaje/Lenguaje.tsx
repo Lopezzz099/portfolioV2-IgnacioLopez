@@ -10,7 +10,7 @@ const Lenguaje = ({onClick, option}: IconProps) => {
         <ListItemIcon>
           <LanguageIcon className={styles.icon}/>
         </ListItemIcon>
-        {option ? <ListItemText primary={"Cambiar a Español"} className={styles.listItemText} /> : <ListItemText primary={"Change to English"} className={styles.listItemText} />}
+        {option === "en" ? <ListItemText primary={"Cambiar a Español"} className={styles.listItemText} /> : <ListItemText primary={"Change to English"} className={styles.listItemText} />}
       </ListItemButton>
     </ListItem>
   );
