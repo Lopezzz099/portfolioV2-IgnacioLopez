@@ -45,9 +45,18 @@ const SectionPrincipal = () => {
         </div>
       </div>
       <div className={styles.container2}>
-        <a href={"#Contacto"} className={styles.a1}>
+        <button
+          className={styles.a1}
+          onClick={() => {
+            const section = document.getElementById("Contactame");
+            if (section) {
+              const offset = section.offsetTop - 180;
+              window.scrollTo({ top: offset, behavior: "smooth" });
+            }
+          }}
+        >
           Contáctame
-        </a>
+        </button>
         <a
           href={
             "https://drive.google.com/file/d/1TfdnlAyFveV5jCCECCIteTVH3gaKZ0tW/view?usp=sharing"
