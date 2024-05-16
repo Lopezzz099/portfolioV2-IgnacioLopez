@@ -4,6 +4,7 @@ import SectionPrincipal from "@/components/home/sections/sectionPrincipal/Sectio
 import SectionSobreMi from "@/components/home/sections/sectionSobreMi/SectionSobreMi";
 import SectionHabilidades from "@/components/home/sections/sectionHabilidades/SectionHabilidades";
 import SectionProyectos from "@/components/home/sections/sectionProyectos/SectionProyectos";
+import SectionContactame from "@/components/home/sections/sectionContactame/SectionContactame";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <SectionSobreMi/>
         <SectionHabilidades/>
         <SectionProyectos/>
+        <SectionContactame/>
       </main>
     </>
   );

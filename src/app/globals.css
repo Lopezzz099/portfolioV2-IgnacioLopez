@@ -46,6 +46,8 @@
   --foreground: #ffffff;
   --primary: #e8a03b;
   --secondary:#ecb75d;
+  --success: rgb(0, 167, 37);
+  --error: rgb(175, 0, 0);
   /* 
   --primary-dark: #9e0b0f;
   --secondary:#0b9e2d;

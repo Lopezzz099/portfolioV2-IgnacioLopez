@@ -1,0 +1,79 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto;
+  gap: 20px;
+}
+.containerInputs {
+  display: flex;
+  flex-direction: column;
+}
+.containerInputs > label {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 8px;
+}
+.spanInput {
+  padding: 8px;
+  border: 1px solid var(--text-color-grey);
+  border-radius: 2px;
+}
+.spanInput > input,
+.spanInput > textarea {
+  background-color: transparent;
+  color: var(--foreground);
+  font-size: 20px;
+  font-weight: 300;
+  width: 100%;
+  outline: 0px;
+}
+.spanInput > textarea {
+  height: 150px;
+  resize: none;
+}
+.button {
+  background-color: transparent;
+  border: 1px solid var(--primary);
+  color: var(--foreground);
+  cursor: pointer;
+  border-radius: 2px;
+  font-size: 22px;
+  padding: 8px;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  gap: 10px;
+  transition: all 200ms ease 0s;
+  text-transform: uppercase;
+}
+.button:hover {
+  background-color: var(--primary);
+  color: --foreground;
+}
+.statusMessageSuccess {
+    background-color: transparent;
+    border: 1px solid var(--success);
+    color: var(--success);
+    text-align: center;
+    border-radius: 2px;
+    font-size: 18px;
+    padding: 12px;
+    transition: all 200ms ease 0s;
+}
+.statusMessageError {
+    background-color: transparent;
+    border: 1px solid var(--error);
+    color: var(--error);
+    text-align: center;
+    border-radius: 2px;
+    font-size: 18px;
+    padding: 12px;
+    transition: all 200ms ease 0s;
+}
+@media (min-width: 820px) {
+  .form {
+    width: 500px;
+  }
+}
