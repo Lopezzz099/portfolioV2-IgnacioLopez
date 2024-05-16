@@ -3,6 +3,7 @@ import stylesSection from "../Sections.module.css";
 import styles from "./SectionProyectos.module.css";
 import ProyectDD from "../../proyects/proyectDD/ProyectDD";
 import ProyectAudiophile from "../../proyects/proyectAudiophile/ProyectAudiophile";
+import ProyectAlquilerAutos from "../../proyects/proyectAlquilerAutos/ProyectAlquilerAutos";
 
 const SectionProyectos = () => {
   return (
@@ -14,6 +15,7 @@ const SectionProyectos = () => {
         <div className={styles.proyects}>
           <ProyectDD />
           <ProyectAudiophile />
+          <ProyectAlquilerAutos />
         </div>
       </div>
     </section>
