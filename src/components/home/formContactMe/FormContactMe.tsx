@@ -60,7 +60,7 @@ const FormContactMe = () => {
   //         return "";
   //     }
   //   };
-  console.log(status);
+
   return (
     <form className={styles.form} onSubmit={handleSubmit}>
       <div className={styles.containerInputs}>
