@@ -34,7 +34,7 @@
 .button {
   background-color: transparent;
   border: 1px solid var(--primary);
-  color: var(--foreground);
+  /* color: var(--foreground); */
   cursor: pointer;
   border-radius: 2px;
   font-size: 22px;
@@ -50,7 +50,7 @@
 }
 .button:hover {
   background-color: var(--primary);
-  color: --foreground;
+  /* color: --foreground; */
 }
 .statusMessageSuccess {
     background-color: transparent;

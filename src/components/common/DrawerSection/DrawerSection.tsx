@@ -21,37 +21,35 @@ import Claro from "@/components/icons/claro/Claro";
 import Lenguaje from "@/components/icons/lenguaje/Lenguaje";
 import { useRouter } from "@/navigation";
 import { usePathname } from "next/navigation";
+import { useTheme } from "@/context/ThemeContext";
+
 
 const DrawerSection = () => {
   const [open, setOpen] = React.useState(false);
-  const [theme, setTheme] = React.useState(false);
   const pathname = usePathname();
   const idiomaSinBarra = pathname.substring(1);
   const [language, setLanguage] = React.useState(idiomaSinBarra);
+  const { toggleTheme, isDarkTheme } = useTheme(); 
 
   const toggleDrawer = (newOpen: boolean) => () => {
     setOpen(newOpen);
   };
-  const router = useRouter()
 
-  const toggleTheme = () => () => {
-    setTheme(!theme);
-  };
+  const router = useRouter();
 
   const toggleLanguage = (newLanguage: string) => () => {
     setLanguage(newLanguage);
-    // Cambiar la ruta según el idioma seleccionado
     if (newLanguage === "es") {
-      router.replace("/", {locale: 'es'});
+      router.replace("/", { locale: 'es' });
     } else if (newLanguage === "en") {
-      router.push("/", {locale: 'en'});
+      router.push("/", { locale: 'en' });
     }
   };
 
   const DrawerList = (
-    <Box sx={{ width: 280 }} role="presentation" className={styles.boxDrawer}>
+    <Box sx={{ width: 280 }} role="presentation" className={isDarkTheme ? styles.boxDrawer : styles.boxDrawerLight}>
       <Box className={styles.boxDrawerMenu}>
-        <p>Menu</p>
+        <h2 className={isDarkTheme ? styles.h2 : styles.h2Light}>Menu</h2>
         <IconButton onClick={toggleDrawer(false)}>
           <CloseIcon />
         </IconButton>
@@ -66,13 +64,14 @@ const DrawerSection = () => {
       </List>
       <Divider />
       <List className={styles.list2}>
-        <ListItemButton sx={{ padding: 0 }} onClick={toggleTheme()}>
-          {theme ? <Oscuro /> : <Claro />}
+        <ListItemButton sx={{ padding: 0 }} onClick={toggleTheme}>
+          {isDarkTheme ? <Claro /> : <Oscuro />} 
         </ListItemButton>
-        <Lenguaje onClick={toggleLanguage(language === "en" ? "es" : "en")} option={language}/>
+        <Lenguaje onClick={toggleLanguage(language === "en" ? "es" : "en")} option={language} />
       </List>
     </Box>
   );
+
   return (
     <div>
       <React.Fragment>

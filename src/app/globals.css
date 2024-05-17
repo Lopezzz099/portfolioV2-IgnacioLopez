@@ -42,8 +42,9 @@
 
 :root {
   --background: #171721;
-  /* --background-light: #1c1824; */
+  --background-light: rgb(245, 245, 245);
   --foreground: #ffffff;
+  --foreground-light: rgb(30, 30, 32);
   --primary: #e8a03b;
   --secondary:#ecb75d;
   --success: rgb(0, 167, 37);
@@ -57,8 +58,11 @@
   --black-button-light: rgba(28, 24, 36, .40); */
 
   --line-color: rgba(255, 255, 255, .45);
+  --line-color-light: rgb(128, 128, 128);
   --text-color-grey: rgb(160, 160, 160);
+  --text-color-grey-light: rgb(128, 128, 128);
   --text: rgb(245, 245, 245);
+  --text-light: rgb(245, 245, 245);
 
   /* --text-copy: rgba(255, 255, 255, .3);
 
@@ -130,7 +134,7 @@ path{
 }
 
 p{
-  color: var(--text);
+  /* color: var(--text); */
   font-family: "Ubuntu Light", sans-serif;
 }
 

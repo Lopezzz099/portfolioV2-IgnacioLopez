@@ -3,7 +3,7 @@
   font-weight: 400;
 }
 .description {
-  color: var(--text-color-grey);
+  /* color: var(--text-color-grey); */
   font-size: 20px;
   margin-top: 20px;
 }
@@ -63,7 +63,7 @@
 .a2 {
   background-color: transparent;
   border: 1px solid var(--primary);
-  color: var(--foreground);
+  /* color: var(--foreground); */
   text-transform: uppercase;
   cursor: pointer;
   border-radius: 2px;

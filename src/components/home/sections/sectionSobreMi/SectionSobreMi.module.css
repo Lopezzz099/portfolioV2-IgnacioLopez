@@ -33,7 +33,7 @@
     font-size: 20px;
     font-weight: 300;
     text-align: left;
-    color: var(--text-color-grey);
+    /* color: var(--text-color-grey); */
     white-space: pre-wrap;
     order: 1;
 }

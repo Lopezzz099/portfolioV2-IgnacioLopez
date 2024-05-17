@@ -1,6 +1,11 @@
+'use client';
+
+import { useTheme } from "@/context/ThemeContext";
 import React from "react";
 
-const Github = ({ size }: IconProps) => {
+const Github = ({ size }: { size: number }) => {
+  const { isDarkTheme } = useTheme(); 
+
   return (
     <svg
       width={size}
@@ -9,7 +14,7 @@ const Github = ({ size }: IconProps) => {
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      style={{filter: "invert(0.9)"}}
+      style={{ filter: isDarkTheme ? "invert(0.9)" : "none" }} // Aplica el filtro condicionalmente
     >
       <title>github [#142]</title>
       <desc>Created with Sketch.</desc>
@@ -39,3 +44,4 @@ const Github = ({ size }: IconProps) => {
 };
 
 export default Github;
+

@@ -23,7 +23,6 @@
   transform: scale(1.1);
 }
 .iconSkillImage {
-  filter: invert(0.9);
   width: 100%;
 }
 .text {
@@ -33,4 +32,13 @@
   .iconSkill {
     width: 80px;
   }
+}
+
+/* Estilos para el tema claro */
+[data-theme="light"] .iconSkillImage {
+  filter: invert(0);
+}
+/* Estilos para el tema oscuro */
+[data-theme="dark"] .iconSkillImage {
+  filter: invert(0.9);
 }

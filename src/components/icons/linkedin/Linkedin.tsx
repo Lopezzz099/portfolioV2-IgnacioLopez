@@ -1,6 +1,11 @@
+'use client';
+
+import { useTheme } from "@/context/ThemeContext";
 import React from "react";
 
 const Linkedin = ({ size }: IconProps) => {
+  const { isDarkTheme } = useTheme();
+
   return (
     <svg
       width={size}
@@ -8,7 +13,7 @@ const Linkedin = ({ size }: IconProps) => {
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      style={{ filter: "invert(0.9)" }}
+      style={{ filter: isDarkTheme ? "invert(0.9)" : "none" }}
     >
       <path
         d="M6.5 8C7.32843 8 8 7.32843 8 6.5C8 5.67157 7.32843 5 6.5 5C5.67157 5 5 5.67157 5 6.5C5 7.32843 5.67157 8 6.5 8Z"

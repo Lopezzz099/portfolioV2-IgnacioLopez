@@ -12,7 +12,7 @@
 }
 .description {
   font-weight: 300;
-  color: var(--text-color-grey);
+  /* color: var(--text-color-grey); */
   font-size: 20px;
   white-space: pre-line;
 }
