@@ -7,9 +7,11 @@ import Github from "@/components/icons/github/Github";
 import Linkedin from "@/components/icons/linkedin/Linkedin";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+import { usePathname } from "next/navigation";
 
 const SectionPrincipal = () => {
   const t = useTranslations("SectionPrincipal");
+  const pathname = usePathname();
 
   return (
     <section className={stylesSection.sections} id="Inicio">
@@ -60,15 +62,27 @@ const SectionPrincipal = () => {
         >
           {t("contact")}
         </button>
-        <a
-          href={
-            "https://drive.google.com/file/d/1TfdnlAyFveV5jCCECCIteTVH3gaKZ0tW/view?usp=sharing"
-          }
-          target={"_blank"}
-          className={styles.a2}
-        >
-          {t("resume")}
-        </a>
+        {pathname === "/es" ? (
+          <a
+            href={
+              "https://drive.google.com/file/d/1TfdnlAyFveV5jCCECCIteTVH3gaKZ0tW/view?usp=sharing"
+            }
+            target={"_blank"}
+            className={styles.a2}
+          >
+            {t("resume")}
+          </a>
+        ) : (
+          <a
+            href={
+              "https://drive.google.com/file/d/1fYE947fz9kKileyuOSww5eKzkGpshSM-/view?usp=sharing"
+            }
+            target={"_blank"}
+            className={styles.a2}
+          >
+            {t("resume")}
+          </a>
+        )}
       </div>
     </section>
   );
