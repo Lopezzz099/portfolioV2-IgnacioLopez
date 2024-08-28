@@ -65,7 +65,7 @@ const SectionPrincipal = () => {
         {pathname === "/es" ? (
           <a
             href={
-              "https://drive.google.com/file/d/1TfdnlAyFveV5jCCECCIteTVH3gaKZ0tW/view?usp=sharing"
+              "https://drive.google.com/file/d/1ezKEe9dUcMca4R_bOrcSnojePFLNyACU/view?usp=sharing"
             }
             target={"_blank"}
             className={styles.a2}
@@ -75,7 +75,7 @@ const SectionPrincipal = () => {
         ) : (
           <a
             href={
-              "https://drive.google.com/file/d/1fYE947fz9kKileyuOSww5eKzkGpshSM-/view?usp=sharing"
+              "https://drive.google.com/file/d/111SLXIzcB1yAzM4DF2yEhF4etXRc9MU3/view?usp=sharing"
             }
             target={"_blank"}
             className={styles.a2}
