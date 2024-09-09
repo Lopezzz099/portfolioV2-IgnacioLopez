@@ -50,7 +50,10 @@
     "send": "Send message",
     "loading": "Sending...",
     "success": "Email sent successfully!",
-    "error": "Error sending email. Please try again."
+    "error": "Error sending email. Please try again.",
+    "errorNameLength": "Name must be at least 3 characters long.",
+    "errorEmailInvalid": "Invalid email address.",
+    "errorMessageLength": "Message must be at least 10 characters long."
   },
   "nav": {
     "home": "Home",
