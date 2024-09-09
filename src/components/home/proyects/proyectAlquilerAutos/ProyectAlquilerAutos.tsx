@@ -1,14 +1,23 @@
-import React from "react";
+'use client';
+
+import React, { useEffect } from "react";
 import styles from "./ProyectAlquilerAutos.module.css";
 import stylesProyects from "../Proyects.module.css";
 import Github from "@/components/icons/github/Github";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import AOS from 'aos';
 
 const ProyectAlquilerAutos = () => {
+  // AOS se inicializa en un efecto secundario
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Duración de la animación
+    });
+  }, []);
   const t = useTranslations("SectionProyectos.proyects.proyectAlquilerAutos");
   return (
-    <article className={stylesProyects.articleLeft}>
+    <article className={stylesProyects.articleLeft} data-aos="fade-left">
       <a
         href="https://dh-reservas-alvarezgonzalo0022s-projects.vercel.app/home"
         className={styles.linkProyect}

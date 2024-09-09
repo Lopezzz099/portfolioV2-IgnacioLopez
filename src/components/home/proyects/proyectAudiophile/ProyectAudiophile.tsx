@@ -1,14 +1,23 @@
-import React from "react";
+'use client';
+
+import React, { useEffect } from "react";
 import styles from "./ProyectAudiophile.module.css";
 import stylesProyects from "../Proyects.module.css";
 import Github from "@/components/icons/github/Github";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import AOS from 'aos';
 
 const ProyectAudiophile = () => {
+  // AOS se inicializa en un efecto secundario
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Duración de la animación
+    });
+  }, []);
   const t = useTranslations("SectionProyectos.proyects.proyectAudiophile");
   return (
-    <article className={stylesProyects.articleRight}>
+    <article className={stylesProyects.articleRight} data-aos="fade-right">
       <a
         href="http://audiophileecomerce.s3-website.us-east-2.amazonaws.com/"
         className={styles.linkProyect}

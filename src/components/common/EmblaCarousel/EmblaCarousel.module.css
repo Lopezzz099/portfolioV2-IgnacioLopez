@@ -1,0 +1,54 @@
+/* Estilo del contenedor del carrusel */
+.embla {
+  position: relative;
+  overflow: hidden;
+  width: 100%; /* Ajusta según sea necesario */
+}
+
+/* Estilo del contenedor de las diapositivas */
+.embla__container {
+  display: flex;
+  flex-direction: row;
+  will-change: transform;
+}
+
+/* Estilo de cada diapositiva */
+.embla__slide {
+  flex: 0 0 auto; /* Evita que las diapositivas se estiren o contraigan */
+  width: 14.2857%; /* 100% / 7 ítems, ajusta según el número de ítems que quieras mostrar */
+  box-sizing: border-box; /* Asegúrate de que el padding y border no aumenten el tamaño total */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 1200px) {
+  .embla__slide {
+    width: 20%; /* 100% / 5 ítems */
+  }
+}
+
+@media (max-width: 900px) {
+  .embla__slide {
+    width: 25%; /* 100% / 4 ítems */
+  }
+}
+
+@media (max-width: 600px) {
+  .embla__slide {
+    width: 33.3333%; /* 100% / 3 ítems */
+  }
+}
+
+@media (max-width: 400px) {
+  .embla__slide {
+    width: 50%; /* 100% / 2 ítems */
+  }
+}
+
+@media (max-width: 300px) {
+  .embla__slide {
+    width: 100%; /* 100% / 1 ítem */
+  }
+}

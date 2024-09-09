@@ -1,17 +1,35 @@
-import React from "react";
+'use client';
+
+import React, { useEffect } from "react";
 import styles from "./ProyectDD.module.css";
 import stylesProyects from "../Proyects.module.css";
 import Github from "@/components/icons/github/Github";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import AOS from 'aos';
 
 const ProyectDD = () => {
+  // AOS se inicializa en un efecto secundario
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Duración de la animación
+    });
+  }, []);
   const t = useTranslations("SectionProyectos.proyects.proyectDD");
   return (
-    <article className={stylesProyects.articleLeft}>
-      <a href="https://proyecto-dnd.vercel.app/landing" className={styles.linkProyect}>
+    <article className={stylesProyects.articleLeft} data-aos="fade-left">
+      <a
+        href="https://proyecto-dnd.vercel.app/landing"
+        className={styles.linkProyect}
+      >
         <div className={styles.imageContainer}>
-          <Image src="/proyecto-dnd.vercel.app_landing.png" width={1000} height={400} alt="proyectoDD" className={styles.image}/>
+          <Image
+            src="/proyecto-dnd.vercel.app_landing.png"
+            width={1000}
+            height={400}
+            alt="proyectoDD"
+            className={styles.image}
+          />
           <span className={styles.spanImage}></span>
         </div>
       </a>
