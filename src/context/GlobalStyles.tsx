@@ -30,4 +30,7 @@ export const GlobalStyles = createGlobalStyle`
   a{
     color: ${({ theme }) => theme.foreground};
   }
+  input{
+    color: ${({ theme }) => theme.foreground};
+  }
 `;

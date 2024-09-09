@@ -21,7 +21,6 @@
 .spanInput > input,
 .spanInput > textarea {
   background-color: transparent;
-  color: var(--foreground);
   font-size: 20px;
   font-weight: 300;
   width: 100%;
@@ -76,4 +75,23 @@
   .form {
     width: 500px;
   }
+}
+
+.inputError {
+  border-color: var(--error);
+}
+
+.errorText {
+  color: var(--error);
+  font-size: 0.875rem;
+}
+
+.statusMessageSuccess {
+  color: var(--success);
+  font-size: 1rem;
+}
+
+.statusMessageError {
+  color: var(--error);
+  font-size: 1rem;
 }
