@@ -3,16 +3,16 @@
     "title": "I am a ",
     "titleSpan": "Front-end",
     "title2": " developer",
-    "description": "Welcome to my portfolio! I help you find and create solutions to your technological needs. Here you can see the ",
+    "description": "Welcome to my portfolio! I will help you find and create solutions to your technological needs. Here you can see the ",
     "descriptionSpan": "latest projects",
-    "description2": " i have taken charge of.",
+    "description2": " i have been in charge of.",
     "contact": "Contact me",
     "resume": "Resume"
   },
   "SectionSobreMi": {
     "title": "About me",
     "description": "If you've stopped here, first and foremost, thank you for your interest. Let me introduce myself again. I'm Ignacio López, working as a Front-End developer. Based in my city, Bahía Blanca - Buenos Aires - Argentina, I completed my studies as a Certified Tech Developer specializing in Front-End.",
-    "description2": "Throughout this journey, I've gained knowledge in various fields, from crafting my first web pages with HTML and CSS to building pages with Next.js and applications with React Native. I'm not sure what's next, but we'll be ready.",
+    "description2": "Throughout this journey, I've gained knowledge in various fields, from crafting my first web pages with HTML and CSS to building pages with Next.js and applications with React Native. I'm not sure what's next, but i'll be ready.",
     "description3": "As a freelancer and student, I've engaged in projects ranging from simple static pages to large, complex endeavors like an E-commerce platform or a Dungeons & Dragons control page. I cherish the memories of all the projects I've been involved in, both individually and as part of a team.",
     "description4": "Currently, I'm open to new projects—whether it's to guide fresh ideas to success or join established ventures in pursuit of new horizons, I'm at your service."
   },
